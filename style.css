@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(91, 180, 253);
+    color: rgb(128, 128, 128);
     transition: ease-in .2s;
 }
 
