@@ -13,7 +13,7 @@ body {
     grid-template-areas: "header"
     "main"
     "footer";
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url("images/blackhole.png");
     background-color: rgba(77, 6, 6, .8);
     color: white;
@@ -122,6 +122,10 @@ main {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+img {
+    max-width: 450px;
 }
 
 footer {
