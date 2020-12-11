@@ -97,11 +97,42 @@ main {
     justify-content: center;
 }
 
-main p {
-    max-width: 80%;
-    padding-left: 3em;
-    padding-right: 3em;
-}
+#container {
+    background-color: rgba(173, 216, 230, .65);
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+  }
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form input[type="tel"],
+  #contact-form input[type="url"],
+  #contact-form textarea {
+    width: 96%;
+    box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  #contact-form button[type="submit"] {
+    cursor: pointer;
+    width: 96%;
+    border: none;
+    background: #991D57;
+    background-image: linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    background-image: -moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    background-image: -webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    color: #FFF;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
 
 footer {
     /* background-color: green; */
@@ -152,11 +183,12 @@ footer p {
         font-size: 1em;
     }
 
-    main p {
-        max-width: 80%;
-        padding-left: 5em;
-        padding-right: 5em;
-    }
+    #container {
+        background-color: rgba(173, 216, 230, .65);
+        width: 60%;
+        margin: auto;
+        padding: 40px;
+      }
 
     footer p {
         padding-top: .5em;

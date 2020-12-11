@@ -13,13 +13,13 @@ body {
     grid-template-areas: "header"
     "main"
     "footer";
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: url("images/blackhole.png");
     background-color: rgba(77, 6, 6, .8);
     color: white;
     height: 100vh;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -113,19 +113,19 @@ main {
 
 /* Create one column for mobile */
 .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 100%; /* IE10 */
     flex: 100%;
-    max-width: 100%;
-    padding: 0 4px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 .5em;
 }
 
 .column img {
-    margin-top: 8px;
+    /* margin-top: 8px; */
+    margin: .5em 2em;
     vertical-align: middle;
-}
-
-img {
-    max-width: 450px;
+    max-width: 350px;
+    max-height: 300px;
 }
 
 footer {
@@ -143,17 +143,26 @@ footer p {
 
 /* Tablet format */
 @media screen and (min-width:600px) {
+    body {
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
     .column {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
+        margin: 0 auto;
     }
+
+   
+
 }
 
 /* Desktop format */
 @media screen and (min-width:800px) {
 
     body {
+        overflow: hidden;
         line-height: 1.4;
         font-size: 1.3em;
     }
@@ -195,7 +204,10 @@ footer p {
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
+    margin: 0 auto;
 }
+
+
 
     footer p {
         padding-top: .5em;
