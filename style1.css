@@ -24,7 +24,6 @@ body {
 }
 
 header {
-    /* background-color: yellow; */
     grid-area: header;
     height: 10vh;
     text-align: center;
@@ -89,19 +88,19 @@ nav a:hover {
 }
 
 main {
-    /* background-color: red; */
     grid-area: main;
     height: 90vh;
     padding-top: 2em;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 /* grid images */
 .header {
     text-align: center;
     padding: 32px;
+}
+
+.header h1 {
+    text-transform: uppercase;
 }
 
 .row {
@@ -126,10 +125,9 @@ main {
 }
 
 footer {
-    /* background-color: green; */
     position: fixed;
     bottom: 0;
-    left: 50%;
+    left: 42%;
     grid-area: footer;
     height: 10vh;
 }
@@ -138,6 +136,16 @@ footer p {
     text-align: center;
     padding-top: 1em;
 }
+
+/* Tablet format */
+@media screen and (min-width:600px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
 /* Desktop format */
 @media screen and (min-width:800px) {
 
@@ -191,10 +199,3 @@ footer p {
 
 }
 
-@media creen and (min-width:600px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
