@@ -99,8 +99,15 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+.container h2{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 .wrapper{
-    background-color: rgba(0, 128, 0, .5);
+    background-color: rgba(173, 216, 230, .3);
     padding: .75em;
 }
 .image-gallery{
@@ -119,11 +126,13 @@ img:hover{
 
 
 footer {
+    grid-area: footer;
+    /* height: 10vh; */
     position: fixed;
     bottom: 0;
-    left: 42%;
-    grid-area: footer;
-    height: 10vh;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: .5em;
 }
 
 footer p {
