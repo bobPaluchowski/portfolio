@@ -93,40 +93,30 @@ main {
     padding-top: 2em;
 }
 
-/* grid images */
-.header {
-    text-align: center;
-    padding: 32px;
-}
-
-.header h1 {
-    text-transform: uppercase;
-}
-
-.row {
-    display: -ms-flexbox; /* IE10 */
+.container{
+    padding-bottom: 1em;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    background-color: rgba(0, 128, 0, .5);
+    padding: .75em;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: .5em;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+img:hover{
+    cursor: pointer;
 }
 
-/* Create one column for mobile */
-.column {
-    -ms-flex: 100%; /* IE10 */
-    flex: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 0 .5em;
-}
-
-.column img {
-    /* margin-top: 8px; */
-    margin: .5em 2em;
-    vertical-align: middle;
-    max-width: 350px;
-    max-height: 300px;
-}
 
 footer {
     position: fixed;
@@ -144,22 +134,23 @@ footer p {
 /* Tablet format */
 @media screen and (min-width:600px) {
     body {
-        overflow: hidden;
-        background-repeat: no-repeat;
-    }
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-        margin: 0 auto;
+        /* overflow: hidden; */
+        background-repeat: repeat;
     }
 
-   
+    .image-gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+    }
 
 }
 
 /* Desktop format */
-@media screen and (min-width:800px) {
+@media screen and (min-width:960px) {
 
     body {
         overflow: hidden;
@@ -198,16 +189,14 @@ footer p {
         font-size: 1em;
     }
 
-    /* Create three equal columns that sits next to each other */
-.column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
-    margin: 0 auto;
-}
+    .image-gallery{
+        grid-template-columns: repeat(5, 1fr);
+    }
 
-
+    img{
+        height: 175px;
+        width: 175px;
+    }
 
     footer p {
         padding-top: .5em;
