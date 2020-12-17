@@ -95,6 +95,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1em;
 }
 
 #container {
@@ -103,6 +104,8 @@ main {
     margin: auto;
     margin-top: 20px;
     padding: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
   }
   #contact-form input[type="text"],
   #contact-form input[type="email"],
