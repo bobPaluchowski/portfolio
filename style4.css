@@ -98,8 +98,9 @@ main {
     margin-right: 2em;
 }
 
-aside{
-    font-size: .8em;
+
+img:hover{
+    cursor: pointer;
 }
 
 h2{
