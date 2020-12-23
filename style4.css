@@ -99,15 +99,26 @@ main {
 }
 
 
-img:hover{
-    cursor: pointer;
-}
-
 h2{
     padding-top: 1em;
     padding-bottom: .5em;
     text-align: center;
 }
+
+p{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+aside{
+    margin-bottom: 2em;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+
   
 /* fix footer position to stay at the bottom */
 footer {
