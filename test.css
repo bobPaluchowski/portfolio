@@ -1,5 +1,10 @@
 
-* {
+:root{
+    --bg-color: #f3eed9;
+    --font-color: #222c2a;
+}
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,8 +21,8 @@ body {
     "main"
     "footer";
     /* background-image: url("images/blackhole.png"); */
-    background-color: rgb(77, 6, 6);
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--font-color);
     min-height: 100%;
     height: 100vh;
     background-position: center;
@@ -33,7 +38,7 @@ header {
     margin-bottom: auto;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid var(--font-color);
     /* background-color: rgb(77, 6, 6); */
 }
 
@@ -44,10 +49,10 @@ header {
 nav ul {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 90vh;
+    width: 75%;
+    height: 100vh;
     padding: 16px;
-    background: rgba(88, 88, 88, 1);
+    background: rgb(233, 219, 219);
     left: -100%;
     transition: all .4s;
     list-style: none;
@@ -56,18 +61,21 @@ nav ul {
 nav li {
     margin-bottom: 16px;
     margin-left: 16px;
+    margin-top: 2em;
 }
 
 nav a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 2em;
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 nav a:hover {
-    color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
     transition: ease-in .2s;
 }
 
@@ -78,7 +86,7 @@ nav a:hover {
 .burger {
     position: absolute;
     font-size: 1.5em;
-    color: white;
+    color: var(--font-color);
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     top: 0;
     right: 0;
@@ -112,7 +120,7 @@ hr{
     max-width: 6em;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: var(--font-color);
 }
 
 p{
@@ -133,6 +141,7 @@ img{
     margin-bottom: .5em;
     max-width: 100%;
     max-height: 100%;
+    border: 1px solid var(--font-color);
 }
 
 img:hover{
@@ -147,7 +156,7 @@ footer {
     /* bottom: 0; */
     width: 100%;
     height: 10vh;
-    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid var(--font-color);
     /* background-color: rgb(0, 0, 0);   */
 }
 
