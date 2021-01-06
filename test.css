@@ -1,7 +1,7 @@
 
 :root{
-    --bg-color: #eef0f2;
-    --font-color: #353b3c;
+    --bg-color: #50513f;
+    --font-color: #f6f8ff;
 }
 
 *{
@@ -52,7 +52,7 @@ nav ul {
     width: 75%;
     height: 100vh;
     padding: 16px;
-    background: #a2999e;
+    background: #272d2d;
     left: -100%;
     transition: all .4s;
     list-style: none;
@@ -71,12 +71,15 @@ nav a {
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: normal;
+    transition: .2s;
 }
 
 nav a:hover {
     color: rgb(0, 0, 0);
     font-weight: 900;
     transition: ease-in .2s;
+    letter-spacing: .2em;
 }
 
 .toggler:checked ~ nav ul {
