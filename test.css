@@ -1,7 +1,7 @@
 
 :root{
-    --bg-color: #f3eed9;
-    --font-color: #222c2a;
+    --bg-color: #eef0f2;
+    --font-color: #353b3c;
 }
 
 *{
@@ -52,7 +52,7 @@ nav ul {
     width: 75%;
     height: 100vh;
     padding: 16px;
-    background: rgb(233, 219, 219);
+    background: #a2999e;
     left: -100%;
     transition: all .4s;
     list-style: none;
