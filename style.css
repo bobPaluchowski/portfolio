@@ -1,3 +1,9 @@
+:root{
+    --bg-color: #0f0a0a;
+    --font-color: #fffffa;
+    --font-hover: #f3b61f;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,23 +20,22 @@ body {
     "main"
     "footer";
     /* overflow: hidden; */
-    background-image: url("images/blackhole.png");
-    background-color: rgba(77, 6, 6, .8);
-    color: white;
+    background-color: var(--bg-color);;
+    color: var(--font-color);
+    min-height: 100%;
     height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
-    /* background-color: yellow; */
     grid-area: header;
     height: 10vh;
     text-align: center;
     position: fixed;
+    margin-bottom: auto;
     width: 100%;
     z-index: 100;
+    border-bottom: 1px solid var(--font-color);
+    background-color: var(--bg-color);
 }
 
 .toggler {
@@ -40,10 +45,10 @@ header {
 nav ul {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 90vh;
+    width: 75%;
+    height: 100vh;
     padding: 16px;
-    background: rgba(88, 88, 88, 1);
+    background: #272d2d;
     left: -100%;
     transition: all .4s;
     list-style: none;
@@ -52,19 +57,25 @@ nav ul {
 nav li {
     margin-bottom: 16px;
     margin-left: 16px;
+    margin-top: 2em;
 }
 
 nav a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 2em;
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: normal;
+    transition: .2s;
 }
 
 nav a:hover {
-    color: rgb(128, 128, 128);
+    color: var(--font-hover);
+    font-weight: 900;
     transition: ease-in .2s;
+    letter-spacing: .2em;
 }
 
 .toggler:checked ~ nav ul {
@@ -74,7 +85,7 @@ nav a:hover {
 .burger {
     position: absolute;
     font-size: 1.5em;
-    color: white;
+    color: var(--font-color);
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     top: 0;
     right: 0;
@@ -89,9 +100,8 @@ nav a:hover {
 }
 
 main {
-    /* background-color: red; */
     grid-area: main;
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,14 +116,12 @@ main p {
   
 
 footer {
-    /* background-color: green; */
     grid-area: footer;
     height: 10vh;
-    position: absolute;
-    bottom: 0;
+    position: sticky;
     width: 100%;
-    height: 2.5rem;
-    margin-bottom: .5em;
+    margin-top: auto;
+    border-top: 1px solid var(--font-color);
 }
 
 footer p {
@@ -127,7 +135,7 @@ footer p {
 
     body {
         line-height: 1.4;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .burger {
@@ -167,8 +175,13 @@ footer p {
         padding-right: 5em;
     }
 
+    footer{
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
     footer p {
-        padding-top: .5em;
+        padding-top: 1em;
     }
 
 }
