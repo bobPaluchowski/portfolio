@@ -2,6 +2,7 @@
     --bg-color: #0f0a0a;
     --font-color: #fffffa;
     --font-hover: #f3b61f;
+    --bg2-color: #335c81;
 }
 
 * {
@@ -19,7 +20,6 @@ body {
     grid-template-areas: "header"
     "main"
     "footer";
-    /* overflow: hidden; */
     background-color: var(--bg-color);;
     color: var(--font-color);
     min-height: 100%;
@@ -34,7 +34,7 @@ header {
     margin-bottom: auto;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid var(--font-color);
+    border-bottom: 1px solid var(--font-hover);
     background-color: var(--bg-color);
 }
 
@@ -48,7 +48,7 @@ nav ul {
     width: 75%;
     height: 100vh;
     padding: 16px;
-    background: #272d2d;
+    background: var(--bg2-color);
     left: -100%;
     transition: all .4s;
     list-style: none;
@@ -101,7 +101,6 @@ nav a:hover {
 
 main {
     grid-area: main;
-    /* height: 90vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +120,7 @@ footer {
     position: sticky;
     width: 100%;
     margin-top: auto;
-    border-top: 1px solid var(--font-color);
+    border-top: 1px solid var(--font-hover);
 }
 
 footer p {
