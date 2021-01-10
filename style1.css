@@ -124,7 +124,7 @@ hr{
     width: 8em;
     margin-left: auto;
     margin-right: auto;
-    color: var(--font-color); /* check this */
+    color: var(--font-hover); /* check this */
     margin-bottom: 2em;
 }
 
@@ -223,6 +223,10 @@ footer p {
 
     nav a {
         font-size: 1em;
+    }
+
+    nav a:focus {
+        color: var(--font-hover);
     }
 
     .image-gallery{

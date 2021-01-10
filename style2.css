@@ -107,7 +107,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3em;
+    padding-top: 6em;
+    padding-bottom: 3em;
 }
 
 #container {
@@ -202,8 +203,12 @@ footer p {
         font-size: 1em;
     }
 
+    nav a:focus {
+        color: var(--font-hover);
+    }
+
     main{
-        padding-top: 3.5em;
+        padding-top: 6em;
     }
 
     #container {

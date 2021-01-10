@@ -123,7 +123,7 @@ hr{
     width: 6em;
     margin-left: auto;
     margin-right: auto;
-    color: var(--font-color);
+    color: var(--font-hover);
 }
 
 p{
@@ -202,6 +202,10 @@ footer p {
 
     nav a {
         font-size: 1em;
+    }
+
+    nav a:focus {
+        color: var(--font-hover);
     }
 
     main{
