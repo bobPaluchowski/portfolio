@@ -108,10 +108,12 @@ main {
 
 main p {
     margin-bottom: 2em;
+    max-height: 100%;
     /* cancel height:100% */
 }
 
 aside{
+    max-height: 100%;
     font-size: .8em;
     margin-top: 3em;
     margin-bottom: 2em;
@@ -124,16 +126,12 @@ h2{
 }
 
 hr{
-    width: 6em;
+    width: 4em;
     margin-left: auto;
     margin-right: auto;
     color: var(--font-hover);
     margin-bottom: 2em;
     margin-top: 1em;
-}
-
-p + hr{
-    margin-bottom: 2em;
 }
   
 footer {
