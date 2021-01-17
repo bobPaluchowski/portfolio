@@ -60,7 +60,7 @@ nav ul {
 nav li {
     margin-bottom: 16px;
     margin-left: 16px;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 nav a {
@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 .burger {
-    position: absolute;
+    float: right;
     font-size: 1.5em;
     color: var(--font-color);
     text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
