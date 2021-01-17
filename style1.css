@@ -205,6 +205,8 @@ footer p {
         grid-column: 2/3;
         justify-content: flex-end;
         align-items: center;
+        height: 10vh;
+        padding-bottom: 1em;
     }
 
     nav ul {
